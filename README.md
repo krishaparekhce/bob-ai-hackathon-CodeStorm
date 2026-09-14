@@ -1,13 +1,9 @@
-# 🚀 [MissionGuard AI].
-
-> ⚠️ **Replace everything in `[ ]` brackets with your actual content before submission.**
+# 🚀 MissionGuard AI.
 ## Explainable Mission Readiness & Predictive Maintenance Copilot
 ---
 
 ## 👥 Team
 
-| Field | Value |
-|---|---|
 | **Team Name** | [CodeStorm] |
 | **Track** | [AI / DevOps / Sustainability / Open] |
 | **Team Lead** | [Khushi Laddha] — [26ce043@charusat.edu.in] |
@@ -16,45 +12,37 @@
 ---
 
 ## 🎯 Problem Statement
-
-> In 2–3 sentences: What problem does your project solve? Who experiences this problem?
-
-[Military organizations can face challenges in determining the readiness of their assets when sensor data and maintenance records are not analyzed together.
+Military organizations can face challenges in determining the readiness of their assets when sensor data and maintenance records are not analyzed together.
 
 Maintenance may rely heavily on scheduled servicing, making it difficult to identify developing issues between maintenance cycles.
 
-The challenge is to analyze asset health and maintenance data to identify non-ready assets, detect potential failure risks, explain the reasons behind those risks, and prioritize maintenance actions.]
+The challenge is to analyze asset health and maintenance data to identify non-ready assets, detect potential failure risks, explain the reasons behind those risks, and prioritize maintenance actions.
 
 ---
 
 ## 💡 Solution
 
-> In 2–3 sentences: What did you build? How does it solve the problem above?
-
-[MissionGuard AI is an explainable predictive-maintenance copilot that combines asset sensor data with maintenance history to evaluate overall asset readiness.
+MissionGuard AI is an explainable predictive-maintenance copilot that combines asset sensor data with maintenance history to evaluate overall asset readiness.
 
 It identifies abnormal conditions, generates a readiness status and risk score, explains why an asset is at risk, and recommends prioritized maintenance actions.
 
 The complete flow is:
 
-Asset Data → Health Analysis → Readiness → Risk → Explanation → Maintenance Action]
+Asset Data → Health Analysis → Readiness → Risk → Explanation → Maintenance Action
 
 ---
 
 ## ✨ Key Features
 
-- **Feature 1:** [ **Mission Readiness Assessment** — Classifies assets as READY, CAUTION, or NOT READY.]
-- **Feature 2:** [**Sensor Health Analysis** — Analyzes vibration, temperature, and pressure conditions]
-- **Feature 3:** [**Risk Scoring** — Generates a 0–100 risk score and LOW, MEDIUM, or HIGH risk level.]
-- **Feature 4:** [**Explainable Risk Analysis** — Shows the detected conditions responsible for the asset's risk.]
-- **Feature 5:** [**Maintenance Recommendations** — Suggests prioritized actions based on detected issues.]
+- **Feature 1:**Mission Readiness Assessment** — Classifies assets as READY, CAUTION, or NOT READY.
+- **Feature 2:**Sensor Health Analysis** — Analyzes vibration, temperature, and pressure conditions.
+- **Feature 3:**Risk Scoring** — Generates a 0–100 risk score and LOW, MEDIUM, or HIGH risk level.
+- **Feature 4:**Explainable Risk Analysis** — Shows the detected conditions responsible for the asset's risk.
+- **Feature 5:**Maintenance Recommendations** — Suggests prioritized actions based on detected issues.
 
 ---
 
 ## 🛠️ Tech Stack
-
-Category  | Technologies
---- | ---
 Languages  | Python, JavaScript, HTML, CSS
 Frameworks  | Flask
 IBM Technologies  | IBM Bob
@@ -88,8 +76,6 @@ CONTRIBUTING.md
 
 ## ⚡ How to Run
 
-> Copy these exact steps from your `docs/setup-guide.md`
-
     # 1. Clone the repo
     git clone https://github.com/krishaparekhce/bob-ai-hackathon-CodeStorm.git
     cd bob-ai-hackathon-CodeStorm
@@ -105,9 +91,6 @@ CONTRIBUTING.md
     python src/app.py
 
 ## 🖥️ Demo
-
-Artifact  | Link
---- | ---
 📹 Demo Video  | See demo/demo-video-link.txt
 🌐 Live Demo  | See demo/live-demo-url.txt
 🖼️ Screenshots  | See demo/screenshots/
@@ -115,9 +98,6 @@ Artifact  | Link
 
 
 ## ⚠️ Known Limitations
-
-> Be honest — judges appreciate transparency over overclaiming.
-
   * The prototype uses synthetic asset data for demonstration.
   * Readiness and risk scores are proof-of-concept indicators and are not validated against real operational data.
   * The prototype is intended for decision-support demonstration and not for autonomous real-world mission decisions.
