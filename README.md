@@ -4,10 +4,10 @@
 
 ## 👥 Team
 
-| **Team Name** | [CodeStorm] |
-| **Track** | [AI / DevOps / Sustainability / Open] |
-| **Team Lead** | [Khushi Laddha] — [26ce043@charusat.edu.in] |
-| **Members** | [Krisha Parekh], [Varsha Karavadra], [Aarvi Pavasiya] |
+| **Team Name** | CodeStorm |
+| **Track** | AI / DevOps / Sustainability / Open |
+| **Team Lead** | Khushi Laddha — 26ce043@charusat.edu.in |
+| **Members** | Krisha Parekh, Varsha Karavadra, Aarvi Pavasiya |
 
 ---
 
@@ -73,7 +73,7 @@ submission.yaml
 .gitignore
 CONTRIBUTING.md
 
-
+---
 ## ⚡ How to Run
 
     # 1. Clone the repo
@@ -89,18 +89,21 @@ CONTRIBUTING.md
 
     # 4. Run the project
     python src/app.py
+---
 
 ## 🖥️ Demo
 📹 Demo Video  | See demo/demo-video-link.txt
 🌐 Live Demo  | See demo/live-demo-url.txt
 🖼️ Screenshots  | See demo/screenshots/
 📊 Presentation  | See presentation/slides.pdf
-
+ ---
 
 ## ⚠️ Known Limitations
   * The prototype uses synthetic asset data for demonstration.
   * Readiness and risk scores are proof-of-concept indicators and are not validated against real operational data.
   * The prototype is intended for decision-support demonstration and not for autonomous real-world mission decisions.
+
+---
 
 ## 🏅 What We're Most Proud Of
 
