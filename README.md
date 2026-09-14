@@ -1,17 +1,17 @@
-# 🚀 [Your Project Title Here]
+# 🚀 [MissionGuard AI].
 
 > ⚠️ **Replace everything in `[ ]` brackets with your actual content before submission.**
-
+## Explainable Mission Readiness & Predictive Maintenance Copilot
 ---
 
 ## 👥 Team
 
 | Field | Value |
 |---|---|
-| **Team Name** | [Your Team Name] |
+| **Team Name** | [CodeStorm] |
 | **Track** | [AI / DevOps / Sustainability / Open] |
-| **Team Lead** | [Name] — [email@ibm.com] |
-| **Members** | [Name 1], [Name 2], [Name 3] |
+| **Team Lead** | [Khushi Laddha] — [26ce043@charusat.edu.in] |
+| **Members** | [Krisha Parekh], [Varsha Karavadra], [Aarvi Pavasiya] |
 
 ---
 
@@ -19,7 +19,11 @@
 
 > In 2–3 sentences: What problem does your project solve? Who experiences this problem?
 
-[Describe the real-world problem your project addresses. Be specific about who the user is and what pain point they face.]
+[Military organizations can face challenges in determining the readiness of their assets when sensor data and maintenance records are not analyzed together.
+
+Maintenance may rely heavily on scheduled servicing, making it difficult to identify developing issues between maintenance cycles.
+
+The challenge is to analyze asset health and maintenance data to identify non-ready assets, detect potential failure risks, explain the reasons behind those risks, and prioritize maintenance actions.]
 
 ---
 
@@ -27,95 +31,97 @@
 
 > In 2–3 sentences: What did you build? How does it solve the problem above?
 
-[Describe your solution clearly. Explain the core mechanism — what makes it work.]
+[MissionGuard AI is an explainable predictive-maintenance copilot that combines asset sensor data with maintenance history to evaluate overall asset readiness.
+
+It identifies abnormal conditions, generates a readiness status and risk score, explains why an asset is at risk, and recommends prioritized maintenance actions.
+
+The complete flow is:
+
+Asset Data → Health Analysis → Readiness → Risk → Explanation → Maintenance Action]
 
 ---
 
 ## ✨ Key Features
 
-- **Feature 1:** [Brief description — e.g., "Real-time anomaly detection using watsonx.ai"]
-- **Feature 2:** [Brief description]
-- **Feature 3:** [Brief description]
-- **Feature 4:** [Optional]
-- **Feature 5:** [Optional]
+- **Feature 1:** [ **Mission Readiness Assessment** — Classifies assets as READY, CAUTION, or NOT READY.]
+- **Feature 2:** [**Sensor Health Analysis** — Analyzes vibration, temperature, and pressure conditions]
+- **Feature 3:** [**Risk Scoring** — Generates a 0–100 risk score and LOW, MEDIUM, or HIGH risk level.]
+- **Feature 4:** [**Explainable Risk Analysis** — Shows the detected conditions responsible for the asset's risk.]
+- **Feature 5:** [**Maintenance Recommendations** — Suggests prioritized actions based on detected issues.]
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Category | Technologies |
-|---|---|
-| **Languages** | [e.g., Python, TypeScript] |
-| **Frameworks** | [e.g., FastAPI, React] |
-| **IBM Technologies** | [e.g., watsonx.ai, IBM Bob, IBM Cloud] |
-| **Databases** | [e.g., PostgreSQL, Redis] |
-| **Other** | [e.g., Docker, GitHub Actions] |
+Category  | Technologies
+--- | ---
+Languages  | Python, JavaScript, HTML, CSS
+Frameworks  | Flask
+IBM Technologies  | IBM Bob
+Databases  | CSV-based synthetic dataset
+Other  | GitHub, VS Code
 
 ---
 
 ## 📁 Repository Structure
 
-```
-├── src/                  # All source code
-├── docs/                 # Written documentation
-│   ├── problem-statement.md
-│   ├── solution-overview.md
-│   ├── architecture.md
-│   └── setup-guide.md
-├── demo/                 # Demo artifacts
-│   ├── screenshots/      # App screenshots
-│   └── demo-video-link.txt  # Link to demo video
-├── presentation/         # Slide deck
-└── submission.yaml       # Structured submission metadata
-```
+```text
+src/
+├── app.py
+├── data/
+│   └── assets.csv
+├── templates/
+│   └── index.html
+└── static/
+    ├── style.css
+    └── script.js
 
----
+docs/
+demo/
+presentation/
+
+README.md
+submission.yaml
+.gitignore
+CONTRIBUTING.md
+
 
 ## ⚡ How to Run
 
-> **Copy these exact steps from your [`docs/setup-guide.md`](docs/setup-guide.md)**
+> Copy these exact steps from your `docs/setup-guide.md`
 
-```bash
-# 1. Clone the repo
-git clone https://github.com/[your-repo].git
-cd [your-repo]
+    # 1. Clone the repo
+    git clone https://github.com/krishaparekhce/bob-ai-hackathon-CodeStorm.git
+    cd bob-ai-hackathon-CodeStorm
 
-# 2. Install dependencies
-[your install command here]
+    # 2. Install dependencies
+    pip install flask
 
-# 3. Configure environment
-cp .env.example .env
-# Edit .env with your values
+    # 3. Configure environment
+    cp .env.example .env
+    # No additional environment variables are required for the current prototype
 
-# 4. Run the project
-[your run command here]
-```
-
----
+    # 4. Run the project
+    python src/app.py
 
 ## 🖥️ Demo
 
-| Artifact | Link |
-|---|---|
-| 📹 Demo Video | [See demo/demo-video-link.txt](demo/demo-video-link.txt) |
-| 🌐 Live Demo | [See demo/live-demo-url.txt](demo/live-demo-url.txt) |
-| 🖼️ Screenshots | [See demo/screenshots/](demo/screenshots/) |
-| 📊 Presentation | [See presentation/slides.pdf](presentation/) |
+Artifact  | Link
+--- | ---
+📹 Demo Video  | See demo/demo-video-link.txt
+🌐 Live Demo  | See demo/live-demo-url.txt
+🖼️ Screenshots  | See demo/screenshots/
+📊 Presentation  | See presentation/slides.pdf
 
----
 
 ## ⚠️ Known Limitations
 
 > Be honest — judges appreciate transparency over overclaiming.
 
-- [Limitation 1: e.g., "Authentication is mocked — not production-ready"]
-- [Limitation 2: e.g., "Only tested on Chrome"]
-- [Limitation 3: e.g., "Feature X is scaffolded but not fully implemented"]
-
----
+  * The prototype uses synthetic asset data for demonstration.
+  * Readiness and risk scores are proof-of-concept indicators and are not validated against real operational data.
+  * The prototype is intended for decision-support demonstration and not for autonomous real-world mission decisions.
 
 ## 🏅 What We're Most Proud Of
 
-[Tell the judges what part of your submission is strongest and worth paying close attention to.]
-
----
+MissionGuard AI brings asset health, mission readiness, risk analysis, explainability, and maintenance prioritization together in one workflow. Instead of only identifying a risky asset, the prototype explains the detected conditions and converts them into prioritized maintenance recommendations, making the result easier to understand and act upon.
