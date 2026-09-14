@@ -1,1 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MissionGuard AI</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
 
+<body>
+
+<header>
+    <h1>MissionGuard AI</h1>
+    <p>Mission Readiness & Predictive Maintenance Copilot</p>
+</header>
+
+<main>
+<section class="mission-overview">
+    <h2>Mission Overview</h2>
+    <p>
+        MissionGuard continuously evaluates synthetic asset health,
+        readiness, risk, and maintenance priorities.
+    </p>
+
+    <div id="priority"></div>
+</section>
+    <section class="summary">
+        <div class="card">
+            <h3>Total Assets</h3>
+            <p id="total">-</p>
+        </div>
+
+        <div class="card">
+            <h3>Ready</h3>
+            <p id="ready">-</p>
+        </div>
+
+        <div class="card">
+            <h3>Caution</h3>
+            <p id="caution">-</p>
+        </div>
+
+        <div class="card">
+            <h3>Not Ready</h3>
+            <p id="notReady">-</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Asset Readiness</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Asset</th>
+                    <th>Readiness</th>
+                    <th>Risk</th>
+                    <th>Risk Score</th>
+                    <th>Issues</th>
+                    <th>Recommended Action</th>
+                </tr>
+            </thead>
+
+            <tbody id="assetTable"></tbody>
+        </table>
+    </section>
+
+</main>
+
+<script src="/static/script.js"></script>
+
+</body>
+</html>
