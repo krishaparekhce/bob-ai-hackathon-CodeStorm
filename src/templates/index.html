@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MissionGuard AI</title>
     <link rel="stylesheet" href="/static/style.css">
 </head>
@@ -9,20 +11,28 @@
 
 <header>
     <h1>MissionGuard AI</h1>
-    <p>Mission Readiness & Predictive Maintenance Copilot</p>
+    <p>Mission Readiness &amp; Predictive Maintenance Copilot</p>
 </header>
 
-<main>
-<section class="mission-overview">
-    <h2>Mission Overview</h2>
-    <p>
-        MissionGuard continuously evaluates synthetic asset health,
-        readiness, risk, and maintenance priorities.
-    </p>
+<div class="disclaimer">
+    &#9432; Synthetic demonstration data — proof-of-concept decision support only.
+    This is not validated operational data and should not be used for real mission decisions.
+</div>
 
-    <div id="priority"></div>
-</section>
+<main>
+
+    <section class="mission-overview">
+        <h2>Mission Overview</h2>
+        <p>
+            MissionGuard continuously evaluates synthetic asset health,
+            readiness, risk, and maintenance priorities.
+        </p>
+
+        <div id="priority"></div>
+    </section>
+
     <section class="summary">
+
         <div class="card">
             <h3>Total Assets</h3>
             <p id="total">-</p>
@@ -30,22 +40,27 @@
 
         <div class="card">
             <h3>Ready</h3>
-            <p id="ready">-</p>
+            <p id="ready" class="READY">-</p>
         </div>
 
         <div class="card">
             <h3>Caution</h3>
-            <p id="caution">-</p>
+            <p id="caution" class="CAUTION">-</p>
         </div>
 
         <div class="card">
             <h3>Not Ready</h3>
-            <p id="notReady">-</p>
+            <p id="notReady" class="NOT_READY">-</p>
         </div>
+
     </section>
 
     <section>
-        <h2>Asset Readiness</h2>
+
+        <h2>
+            Asset Readiness
+            <span class="table-hint">(click any row for details)</span>
+        </h2>
 
         <table>
             <thead>
@@ -61,9 +76,57 @@
 
             <tbody id="assetTable"></tbody>
         </table>
+
     </section>
 
 </main>
+
+
+<!-- Detail Modal -->
+<div
+    id="detail-modal"
+    class="modal-overlay"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="modal-title"
+>
+
+    <div class="modal-card">
+
+        <button
+            class="modal-close"
+            onclick="closeModal()"
+            aria-label="Close"
+        >
+            &times;
+        </button>
+
+        <h2 id="modal-title"></h2>
+
+        <div class="modal-row">
+            <span class="modal-label">Readiness</span>
+            <span id="modal-readiness" class="modal-status"></span>
+        </div>
+
+        <div class="modal-row">
+            <span class="modal-label">Risk</span>
+            <span id="modal-risk"></span>
+        </div>
+
+        <div class="modal-section">
+            <h4>Contributing Issues</h4>
+            <ul id="modal-issues"></ul>
+        </div>
+
+        <div class="modal-section">
+            <h4>Recommended Actions</h4>
+            <ul id="modal-actions"></ul>
+        </div>
+
+    </div>
+
+</div>
+
 
 <script src="/static/script.js"></script>
 
