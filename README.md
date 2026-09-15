@@ -3,7 +3,7 @@
 ---
 
 ## 👥 Team
-
+| --- | --- |
 | **Team Name** | CodeStorm |
 | **Track** | AI / DevOps / Sustainability / Open |
 | **Team Lead** | Khushi Laddha — 26ce043@charusat.edu.in |
@@ -94,9 +94,9 @@ CONTRIBUTING.md
 
 
 ---
-```
 
 ## 🖥️ Demo
+
 📹 Demo Video  | See demo/demo-video-link.txt
 🌐 Live Demo  | See demo/live-demo-url.txt
 🖼️ Screenshots  | See demo/screenshots/
