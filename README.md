@@ -108,15 +108,17 @@ Artifact  | Link
 
 
 
- ---
-```
+---
+
 ## ⚠️ Known Limitations
+
   * The prototype uses synthetic asset data for demonstration.
   * Readiness and risk scores are proof-of-concept indicators and are not validated against real operational data.
   * The prototype is intended for decision-support demonstration and not for autonomous real-world mission decisions.
 
 ---
-```
+
+```text
 ## 🏅 What We're Most Proud Of
 
 MissionGuard AI brings asset health, mission readiness, risk analysis, explainability, and maintenance prioritization together in one workflow. Instead of only identifying a risky asset, the prototype explains the detected conditions and converts them into prioritized maintenance recommendations, making the result easier to understand and act upon.
