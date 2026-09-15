@@ -2,7 +2,8 @@
 
 ## System Architecture
 
-[Describe the overall architecture of your system. Replace the Mermaid diagram below with your actual architecture.]
+MissionGuard AI follows a lightweight architecture designed for an explainable predictive-maintenance proof of concept. Synthetic sensor and maintenance data is loaded from a CSV file, processed by a Flask backend, analyzed by readiness and risk engines, and presented through a web dashboard.
+
 
 ```mermaid
 graph TD
