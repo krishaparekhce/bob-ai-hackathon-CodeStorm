@@ -1,12 +1,11 @@
-
 asset_id,asset_name,vibration,temperature,pressure,usage_hours,last_service_days,maintenance_count
 A001,Engine Alpha,2.1,68,102,420,25,3
-A002,Engine Bravo,5.8,91,118,760,145,6
+A002,Engine Bravo,7.2,96,122,870,175,8
 A003,Engine Charlie,2.8,73,105,510,60,4
-A004,Engine Delta,7.2,97,121,890,180,8
+A004,Engine Delta,7.5,98,124,910,185,9
 A005,Engine Echo,1.9,65,99,310,15,2
-A006,Engine Foxtrot,4.9,86,114,680,110,5
-A007,Engine Gamma,3.2,76,108,550,70,4
-A008,Engine Hotel,6.7,94,119,820,160,7
-A009,Engine India,2.4,70,103,390,35,3
-A010,Engine Juliet,5.4,88,116,720,125,6
+A006,Engine Foxtrot,3.8,92,109,580,95,4
+A007,Engine Gamma,3.1,76,107,540,70,4
+A008,Engine Hotel,7.0,95,120,840,165,7
+A009,Engine India,4.2,91,108,430,90,4
+A010,Engine Juliet,2.5,71,104,380,30,3
