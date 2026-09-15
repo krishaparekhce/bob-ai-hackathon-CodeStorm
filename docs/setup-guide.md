@@ -1,19 +1,20 @@
 # Setup Guide
 
-> **This file is read by the automated evaluation pipeline. Be precise and complete.**
+> MissionGuard AI is a Flask-based proof-of-concept dashboard using synthetic asset sensor and maintenance data.
 
 ## Prerequisites
 
 Before you begin, ensure you have the following installed:
+- [ Python 3.10+ ]
+- [ pip ]
+- [ Git ]
+- [ A modern web browser ]
 
-- [ ] [e.g., Python 3.11+]
-- [ ] [e.g., Node.js 18+]
-- [ ] [e.g., Docker Desktop]
-- [ ] [e.g., An IBM Cloud account with watsonx.ai access]
-
+  
 ## Environment Variables
 
-Copy `.env.example` to `.env` and fill in the values:
+The current prototype does not require any API keys or additional environment variables.
+The `.env.example` file is included in the repository for environment configuration.
 
 ```bash
 cp .env.example .env
@@ -21,59 +22,69 @@ cp .env.example .env
 
 | Variable | Description | Required |
 |---|---|---|
-| `WATSONX_API_KEY` | Your IBM watsonx.ai API key | Yes |
-| `WATSONX_PROJECT_ID` | Your watsonx.ai project ID | Yes |
-| `DATABASE_URL` | PostgreSQL connection string | Yes |
-| `SLACK_WEBHOOK_URL` | Slack webhook for alerts | No |
+| `None` | No environment variables are required for the current prototype | No |
 
 ## Installation
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/[your-org]/[your-repo].git
-cd [your-repo]
+git clone https://github.com/krishaparekhce/bob-ai-hackathon-CodeStorm.git
+cd bob-ai-hackathon-CodeStorm
 
 # 2. Install backend dependencies
-[your command — e.g.: pip install -r requirements.txt]
+pip install flask
 
-# 3. Install frontend dependencies (if applicable)
-[your command — e.g.: cd frontend && npm install]
+# 3. Install frontend dependencies
+# No separate frontend installation is required.
 
-# 4. Set up the database (if applicable)
-[your command — e.g.: python manage.py migrate]
+# 4. Set up the database
+# No external database is required.
+# The prototype uses a CSV-based synthetic dataset.
 ```
 
 ## Running the Application
 
 ```bash
-# Start the backend
-[your command — e.g.: uvicorn app.main:app --reload]
-
-# Start the frontend (in a separate terminal, if applicable)
-[your command — e.g.: cd frontend && npm run dev]
+# Start the application
+python src/app.py
 ```
 
-The application will be available at: `http://localhost:[PORT]`
+The application will be available at: http://127.0.0.1:5000
 
 ## Running Tests
 
 ```bash
-[your test command — e.g.: pytest tests/ -v]
+The current prototype does not include a separate automated test suite.
+
+The application can be manually verified using the following endpoints:
+
+/api/health
+/api/assets
+/api/readiness
+/api/risk
+/api/maintenance
 ```
 
 ## Quick Demo (Optional)
 
-If you have a demo script or sample data to showcase the project quickly:
-
 ```bash
-[e.g.: python demo/seed_demo_data.py]
-[e.g.: open http://localhost:8000/demo]
+1. Start the Flask application.
+2. Open http://127.0.0.1:5000
+3. Review the Mission Overview.
+4. Select an asset from the dashboard.
+5. View its readiness status and risk score.
+6. Review the detected issues.
+7. Review the recommended maintenance actions.]
 ```
 
 ## Troubleshooting
 
 | Issue | Solution |
 |---|---|
-| [e.g., `ModuleNotFoundError`] | [e.g., Run `pip install -r requirements.txt` again] |
-| [e.g., Database connection refused] | [e.g., Ensure PostgreSQL is running: `docker compose up db`] |
-| [e.g., watsonx.ai 401 error] | [e.g., Check `WATSONX_API_KEY` in your `.env` file] |
+| [ModuleNotFoundError: No module named 'flask'] | [Run pip install flask and restart the application] |
+| [Port 5000 is already in use] | [Stop the existing Flask/Python process and restart the application] |
+| [Dashboard does not load] | [Confirm that python src/app.py is running] |
+| [Asset data is missing] | [Confirm that src/data/assets.csv exists] |
+| [Changes are not visible] | [Refresh the browser and restart the Flask application] |
+
+
