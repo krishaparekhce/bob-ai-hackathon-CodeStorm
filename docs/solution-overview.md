@@ -2,40 +2,52 @@
 
 ## What We Built
 
-[Describe your solution in plain language. Avoid jargon — write as if explaining to a smart colleague unfamiliar with your tech stack.]
+MissionGuard AI is an explainable predictive maintenance copilot that evaluates asset health and readiness using synthetic sensor readings and maintenance history. It provides a readiness status, risk score, explanation of detected issues, and prioritized maintenance recommendations through a simple dashboard.
 
 ## How It Works
 
-[Explain the core mechanism step by step. A numbered list or simple flow works well here.]
-
-1. [Step 1: e.g., "User connects their GitHub repository via OAuth"]
-2. [Step 2: e.g., "The system ingests pipeline logs and feeds them to watsonx.ai"]
-3. [Step 3: e.g., "An anomaly score is computed and displayed on the dashboard"]
-4. [Step 4: e.g., "Alerts are sent to Slack when the score exceeds a threshold"]
+1. The system loads synthetic asset sensor data and maintenance history from a CSV dataset.
+2. The system analyzes vibration, temperature, pressure, and maintenance information to identify abnormal conditions.
+3. A readiness engine classifies each asset as READY, CAUTION, or NOT READY.
+4. A risk engine calculates a proof-of-concept risk score and assigns LOW, MEDIUM, or HIGH risk.
+5. The system explains the conditions contributing to an asset's risk.
+6. The maintenance module generates prioritized recommendations based on the detected conditions.
+7. The dashboard presents the results so users can quickly identify assets requiring attention.
 
 ## Architecture Diagram
 
 > See [`architecture.md`](architecture.md) for the detailed diagram.
 
-[Optionally include a simple ASCII or Mermaid diagram here for quick reference.]
-
 ```
-[User] → [Frontend: React] → [API: FastAPI] → [watsonx.ai] → [Dashboard]
-                                    ↓
-                             [PostgreSQL DB]
+[CSV Sensor & Maintenance Data]
+              ↓
+      [Flask Backend]
+              ↓
+       [Health Analysis]
+              ↓
+       [Readiness Engine]
+         ↙           ↘
+[Readiness Status]  [Risk Engine]
+                         ↓
+                 [Explainability]
+                         ↓
+              [Maintenance Recommendations]
+                         ↓
+                  [Web Dashboard]
 ```
 
 ## Key Design Decisions
 
 | Decision | Rationale |
 |---|---|
-| [e.g., Used watsonx.ai for anomaly detection] | [e.g., Pre-trained models reduced time-to-value vs. building from scratch] |
-| [Decision 2] | [Rationale 2] |
-| [Decision 3] | [Rationale 3] |
+| Used a lightweight Flask backend | Simple and suitable for building and demonstrating the prototype quickly |
+| Used a CSV-based synthetic dataset | Allows safe demonstration without using real operational or military data |
+| Used rule-based readiness and risk logic | Provides transparent and explainable proof-of-concept results |
+| Combined risk explanation with maintenance recommendations | Helps users understand not only which asset is at risk, but also what action is recommended |
 
 ## IBM Technologies Used
 
-[Explain specifically HOW you used each IBM technology — not just that you used it.]
+IBM Bob: Used as the required AI development environment and copilot for building and working on the project.
 
 - **[IBM Tech 1, e.g., watsonx.ai]:** [How it was used — e.g., "Used the `ibm/granite-13b-instruct-v2` model via the Python SDK to classify anomaly types from log text."]
 - **[IBM Tech 2]:** [How it was used]
